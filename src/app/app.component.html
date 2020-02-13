@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div id="navbar" class="navbar navbar-fixed-top bg-dark">
+            <span></span>
+        </div>
+        <div class="container-fluid" id="maincontent"></div>
+
+        <!-- sidebar -->
+        <div id="sidebar" class="col-md-3 col-md-2-none d-sm-block sidebar">
+            <ul class="nav nav-pills flex-column">
+                <div id="l1">
+                    <li class="nav-links" routerLink="/login">
+                        SIGNUP
+                    </li>
+
+                </div>
+                <div id="l2">
+                    <li class="nav-links" routerLink="/signup">
+                        LOGIN
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="col-md-9 ml-sm-auto col-sm-10 pt3" id="dashboard">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
