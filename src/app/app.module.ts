@@ -1,29 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './dashboard/home/home.component';
-import { LoginComponent } from './dashboard/login/login.component';
-import { SignupComponent } from './dashboard/signup/signup.component';
-// import { MatButtonModule } from '@angular/material/button';
+// import { SignupComponent } from './dashboard/signup/signup.component';
+
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { from } from 'rxjs';
+import { ListComponent } from './list/list.component';
+import {LoginComponent } from './login/login.component';
+import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    // SignupComponent,
+    ListComponent,
     LoginComponent,
-    SignupComponent
+    AddComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

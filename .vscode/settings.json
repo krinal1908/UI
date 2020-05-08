@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 60,
+            "database": "loginID",
+            "dialect": "MySQL",
+            "name": "Mysql",
+            "password": "krinal",
+            "port": 3306,
+            "server": "localhost",
+            "username": "krinal"
+        },
+        {
+            "askForPassword": false,
+            "connectionTimeout": 60,
+            "database": "attendance",
+            "dialect": "MySQL",
+            "name": "Mysql",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
